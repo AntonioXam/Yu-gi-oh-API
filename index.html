@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yu-Gi-Oh! Card Database</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Yu-Gi-Oh! Card Database</h1>
+        <div class="search-container">
+            <input type="text" id="searchCard" placeholder="Buscar carta...">
+            <button id="searchButton">Buscar</button>
+        </div>
+        <div class="filters-container">
+            <div class="filter-section">
+                <h3>Filtrar por Tipo</h3>
+                <div class="type-filters">
+                    <button class="filter-btn" data-type="Normal Monster">Monstruo Normal</button>
+                    <button class="filter-btn" data-type="Effect Monster">Monstruo de Efecto</button>
+                    <button class="filter-btn" data-type="Fusion Monster">Monstruo de Fusión</button>
+                    <button class="filter-btn" data-type="Ritual Monster">Monstruo Ritual</button>
+                    <button class="filter-btn" data-type="Synchro Monster">Monstruo Sincronía</button>
+                    <button class="filter-btn" data-type="XYZ Monster">Monstruo XYZ</button>
+                    <button class="filter-btn" data-type="Spell Card">Carta Mágica</button>
+                    <button class="filter-btn" data-type="Trap Card">Carta Trampa</button>
+                </div>
+            </div>
+            <div class="filter-section">
+                <h3>Filtrar por Estadísticas</h3>
+                <div class="stat-filters">
+                    <div class="stat-filter">
+                        <label for="minAtk">ATK mínimo:</label>
+                        <input type="number" id="minAtk" placeholder="Ej: 3000">
+                    </div>
+                    <div class="stat-filter">
+                        <label for="minDef">DEF mínimo:</label>
+                        <input type="number" id="minDef" placeholder="Ej: 2500">
+                    </div>
+                    <button id="applyStatFilters">Aplicar Filtros</button>
+                </div>
+            </div>
+            <button id="clearFilters" class="clear-filters-btn">Limpiar Filtros</button>
+        </div>
+    </header>
+    
+    <main id="cardContainer" class="card-container"></main>
+    
+    <template id="template-card">
+        <div class="yugioh-card">
+            <div class="card-image">
+                <img src="" alt="">
+            </div>
+            <div class="card-info">
+                <h3 class="card-name"></h3>
+                <div class="card-level"></div>
+                <div class="card-type"></div>
+                <div class="card-stats">
+                    <span class="atk"></span>
+                    <span class="def"></span>
+                </div>
+                <div class="card-desc"></div>
+            </div>
+        </div>
+    </template>
+    <script src="./js/app.js"></script>
+</body>
+</html>

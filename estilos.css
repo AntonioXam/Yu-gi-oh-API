@@ -1,0 +1,208 @@
+/* Estilos generales de la página */
+body {
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #141414;
+    color: white;
+}
+
+/* Contenedor principal de la sección de búsqueda */
+.contenedor-busqueda {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Estilo del título principal */
+.contenedor-busqueda h1 {
+    color: #E50914;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+/* Estilo del subtítulo */
+.contenedor-busqueda .subtitulo {
+    color: #888;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+/* Estilos del mensaje de bienvenida inicial */
+.mensaje-inicial {
+    text-align: center;
+    padding: 60px 40px;
+    background-color: #333;
+    border-radius: 8px;
+    margin: 40px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Título del mensaje de bienvenida */
+.mensaje-inicial h2 {
+    color: #E50914;
+    margin-bottom: 20px;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Texto del mensaje de bienvenida */
+.mensaje-inicial p {
+    color: #ccc;
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Contenedor de la barra de búsqueda */
+.barra-busqueda {
+    margin-bottom: 30px;
+}
+
+/* Campo de entrada de búsqueda */
+#campoBusqueda {
+    padding: 12px;
+    width: 400px;
+    font-size: 16px;
+    border: 2px solid #E50914;
+    border-radius: 4px;
+    background-color: #333;
+    color: white;
+    margin-right: 10px;
+}
+
+/* Estilo del placeholder del campo de búsqueda */
+#campoBusqueda::placeholder {
+    color: #888;
+}
+
+/* Botón de búsqueda */
+#botonBuscar {
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #E50914;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Efecto hover del botón de búsqueda */
+#botonBuscar:hover {
+    background-color: #f40612;
+}
+
+/* Contenedor de la sección de géneros */
+.contenedor-generos {
+    margin-bottom: 30px;
+}
+
+/* Título de la sección de géneros */
+.contenedor-generos h2 {
+    color: #E50914;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+/* Grid de botones de género */
+.botones-genero {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* Estilo de los botones de género */
+.boton-genero {
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: #333;
+    color: white;
+    border: 1px solid #E50914;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Efecto hover de los botones de género */
+.boton-genero:hover {
+    background-color: #E50914;
+}
+
+/* Estilo del botón de género activo */
+.boton-genero.activo {
+    background-color: #E50914;
+}
+
+/* Grid de resultados de películas */
+#resultados {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 30px;
+    padding: 20px;
+}
+
+/* Tarjeta individual de película */
+.carta {
+    background: #333;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+/* Efecto hover de la tarjeta */
+.carta:hover {
+    transform: translateY(-10px);
+}
+
+/* Imagen del póster de la película */
+.carta img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Contenedor de información de la película */
+.carta .info {
+    padding: 15px;
+}
+
+/* Título de la película */
+.carta h3 {
+    margin: 0;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 8px;
+}
+
+/* Valoración de la película */
+.carta .valoracion {
+    color: #ffd700;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* Fecha de lanzamiento */
+.carta .fecha {
+    color: #888;
+    font-size: 14px;
+}
+
+/* Descripción de la película con límite de 3 líneas */
+.carta .descripcion {
+    font-size: 14px;
+    color: #ccc;
+    margin-top: 10px;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+} 

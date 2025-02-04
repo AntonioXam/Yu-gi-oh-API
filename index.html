@@ -1,26 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <!-- Metadatos básicos -->
+   
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buscador de Películas</title>
-    <!-- Enlace a la hoja de estilos -->
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <!-- Contenedor principal para la búsqueda -->
     <div class="contenedor-busqueda">
         <h1>Buscador de Películas</h1>
-        <!-- Barra de búsqueda con input y botón -->
         <div class="barra-busqueda">
             <input type="text" id="campoBusqueda" placeholder="Buscar películas...">
             <button id="botonBuscar">Buscar</button>
         </div>
-        <!-- Sección de géneros con botones de filtrado -->
         <div class="contenedor-generos">
             <h2>Géneros</h2>
-            <!-- Grid de botones para filtrar por género -->
             <div class="botones-genero">
                 <!-- Cada botón tiene un data-attribute con el ID del género según la API de TMDB -->
                 <button class="boton-genero" data-genero="28">Acción</button>
@@ -36,10 +31,7 @@
             </div>
         </div>
     </div>
-    <!-- Contenedor donde se mostrarán los resultados de la búsqueda -->
     <div id="resultados"></div>
-
-    <!-- Script principal de la aplicación -->
     <script src="funciones.js"></script>
 </body>
 </html> 

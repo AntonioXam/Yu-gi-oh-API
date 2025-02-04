@@ -14,9 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const divResultados = document.getElementById('resultados');       
     const botonesGenero = document.querySelectorAll('.boton-genero'); 
 
-    /**
-     * Muestra el mensaje inicial de bienvenida cuando se carga la página.
-     */
+    // Muestra el mensaje inicial de bienvenida cuando se carga la página.
     divResultados.innerHTML = `
         <div class="mensaje-inicial">
             <h2>¡Bienvenido al Buscador de Películas!</h2>
@@ -76,9 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    /**
-     * Muestra las películas en la interfaz de usuario.
-     */
+    // Muestra las películas en la interfaz de usuario.
     function mostrarPeliculas(peliculas) {
         divResultados.innerHTML = '';
         
@@ -111,9 +107,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    /**
-     * Formatea una fecha al estilo español.
-     */
+    
+    // Formatea una fecha al estilo español.
     function formatearFecha(fecha) {
         if (!fecha) return 'Fecha no disponible';
         const opciones = { year: 'numeric', month: 'long', day: 'numeric' };
